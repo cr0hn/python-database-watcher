@@ -1,0 +1,3 @@
+redis
+orjson
+aioredis[hiredis]

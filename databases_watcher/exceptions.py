@@ -1,0 +1,2 @@
+class DatabaseWatcherException(Exception):
+    pass
