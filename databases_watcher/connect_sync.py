@@ -1,7 +1,8 @@
 from __future__ import annotations
 
+from .interfaces import BusInterface
 from .exceptions import DatabaseWatcherException
-from .databases_sync import BusInterface, RedisBusSimpleQueue, RedisBusPubSub
+from .databases import RedisBusSimpleQueue, RedisBusPubSub
 
 def connect_database(connection_string: str) -> BusInterface:
 

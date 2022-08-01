@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - powerful_pipes_watch_bus/**
+      - databases_watcher/**
       - VERSION
       - setup*
 

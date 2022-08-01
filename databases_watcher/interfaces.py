@@ -25,7 +25,7 @@ class BusInterface(metaclass=abc.ABCMeta):
         raise NotImplementedError()
 
     @abc.abstractmethod
-    def send_message(self, data: dict):
+    def send_message(self, data: dict or str or bytes or int or float):
         raise NotImplementedError()
 
 class BusInterfaceAsync(metaclass=abc.ABCMeta):
@@ -48,7 +48,7 @@ class BusInterfaceAsync(metaclass=abc.ABCMeta):
         raise NotImplementedError()
 
     @abc.abstractmethod
-    async def send_message(self, data: dict):
+    async def send_message(self, data: dict or str or bytes or int or float):
         raise NotImplementedError()
 
 
